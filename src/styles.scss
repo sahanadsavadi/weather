@@ -1,19 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
-:root{
-    --blue-1:#3C429E;
-    --blue-2 :#4C52AD;
-    --yellow-1:#FAC742;
-    --white:#FFF;
-    --grey-1:#EDEDED;
-    --shadow-dark:rgba(0,0,0,0.3);
-    --shadow-light:rgba(255,255,255,0.1);
-
+:root {
+    --blue-1: #3c429e;
+    --blue-2: #4c52ad;
+    --yellow-1: #fac742;
+    --white: #fff;
+    --grey-1: #ededed;
+    --shadow-dark: rgba(0, 0, 0, 0.3);
+    --shadow-light: rgba(255, 255, 255, 0.1);
 }
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
+body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
     width: 100%;
@@ -22,32 +21,30 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
-.container{
+.container {
     width: 500px;
-    height:80vh ;
+    height: 80vh;
     background-color: var(--blue-2);
     border-radius: 20px;
-    box-shadow: 10px 10px 10px var(--shadow-dark); 
+    box-shadow: 10px 10px 10px var(--shadow-dark);
 }
-.upper-data{
+.upper-data {
     position: relative;
     overflow: hidden;
     height: 50%;
     width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    img{
+    img {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
-        height:100%;
-
+        height: 100%;
     }
 }
-.lower-data{
+.lower-data {
     position: relative;
     overflow: hidden;
     width: 100%;
@@ -58,32 +55,29 @@ body{
     justify-content: center;
     flex-direction: column;
 }
-.weather-data{
+.weather-data {
     position: relative;
     z-index: 1;
     width: 100%;
     height: 80%;
-    background-color:var(--shadow-dark);
+    background-color: var(--shadow-dark);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-
 }
-.location{
+.location {
     color: var(--white);
     text-align: center;
     font-size: 1.2em;
-
 }
-.temperature{
-color: var(--white);
-font-size: 4em;
-text-align: center;
-font-weight: 900;
+.temperature {
+    color: var(--white);
+    font-size: 4em;
+    text-align: center;
+    font-weight: 900;
 }
-.more-info-lable{
+.more-info-lable {
     color: var(--white);
 
     display: flex;
@@ -91,7 +85,7 @@ font-weight: 900;
     justify-content: space-between;
     margin: 5px 10px;
 }
-.more-info-continer{
+.more-info-continer {
     flex: 1;
     background-color: var(--shadow-light);
     border-bottom-left-radius: 20px;
@@ -101,30 +95,44 @@ font-weight: 900;
     flex-direction: row;
     flex-wrap: wrap;
 }
-.info-block{
+.info-block {
     width: 50%;
     display: flex;
     flex-direction: row;
 }
-.info-block-lable{
+.info-block-lable {
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    img{
+    img {
         width: 1.8em;
     }
-    span{
-    color: var(--white);   
-    font-size: 0.8em; 
+    span {
+        color: var(--white);
+        font-size: 0.8em;
     }
 }
 
-.info-block-value{
+.info-block-value {
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     color: var(--white);
+}
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .input-one {
+        padding: 5px;
+        background-color: var(--grey-1);
+        box-shadow: 10px 10px 10px var(--shadow-dark);
+        height: 30px;
+        border-radius: 8px;
+        border: var(--grey-1);
+        margin-bottom: 10px;
+    }
 }

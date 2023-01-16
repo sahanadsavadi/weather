@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { WeatherService } from './service/weather.service';
-import { take } from 'rxjs';
+
 
 @Component({
   selector: 'app-root',
@@ -8,11 +8,10 @@ import { take } from 'rxjs';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  city = 'tehran';
-
-
   constructor(private WeatherService: WeatherService) {}
-  click() {
-    this.WeatherService.getWeatherData(this.city);
+  click(v:string) {
+    if (v) {
+      this.WeatherService.getWeatherData(v);
+    }
   }
 }
