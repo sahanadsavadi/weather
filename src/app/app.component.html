@@ -6,6 +6,7 @@
       placeholder="city"
       name="city"
       [(ngModel)]="CityName"
+      (keyup.enter)="onSubmit()"
     />
   </form>
 </div>
