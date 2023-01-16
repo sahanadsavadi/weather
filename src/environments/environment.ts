@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   urlApi: 'https://open-weather13.p.rapidapi.com',
-  keyApi: '1354b1553dmsh23da3101df9dd08p11cf9bjsn5711c65f3532',
+  keyApi: '57859f0e95msh8025c79421bfe38p177861jsn2da9a0fc31d6',
   hostApi: 'open-weather13.p.rapidapi.com',
 };
 
