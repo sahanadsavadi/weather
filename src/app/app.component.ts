@@ -9,7 +9,7 @@ import { WeatherData } from './model/weather.model';
 })
 export class AppComponent implements OnInit {
   WeatherData?: WeatherData;
-  CityName: string = 'tehran';
+  CityName: string = 'Alaska';
 
   constructor(private WeatherService: WeatherService) {}
 
